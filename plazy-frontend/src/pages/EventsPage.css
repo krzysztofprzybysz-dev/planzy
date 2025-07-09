@@ -1,0 +1,100 @@
+.events-page {
+    width: 100%;
+}
+
+.events-page-header {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+.events-page-header h1 {
+    color: var(--text-color);
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-md);
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+}
+
+.events-page-header h1::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--primary-color);
+    border-radius: 2px;
+}
+
+.events-page-header p {
+    color: var(--text-color-medium);
+    font-size: var(--font-size-md);
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.reset-search-button {
+    background-color: var(--background-light);
+    color: var(--primary-color);
+    border: none;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: var(--font-size-sm);
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.reset-search-button:hover {
+    background-color: var(--primary-color-light);
+    color: white;
+}
+
+.error-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-xl);
+    background-color: white;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-sm);
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.error-container p {
+    color: var(--text-color-medium);
+    margin-bottom: var(--spacing-lg);
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: var(--spacing-xl);
+    gap: var(--spacing-md);
+}
+
+.pagination-info {
+    font-size: var(--font-size-sm);
+    color: var(--text-color-medium);
+}
+
+@media (max-width: 768px) {
+    .events-page-header h1 {
+        font-size: 2rem;
+    }
+
+    .events-page-header p {
+        font-size: var(--font-size-base);
+    }
+}

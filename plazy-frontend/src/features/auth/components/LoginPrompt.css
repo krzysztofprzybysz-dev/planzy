@@ -1,0 +1,50 @@
+.login-prompt {
+    margin: 2rem 0;
+    background-color: white;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+}
+
+.login-prompt-content {
+    padding: 2.5rem;
+    text-align: center;
+}
+
+.login-prompt-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.login-prompt h3 {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.login-prompt p {
+    color: var(--text-color-medium);
+    margin-bottom: 1.5rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login-prompt-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .login-prompt-content {
+        padding: 1.5rem;
+    }
+
+    .login-prompt-actions {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
