@@ -151,3 +151,17 @@ To get the application running locally, you need to set up both the backend and 
 
 The backend includes an interactive command-line interface to manage the data. After starting the backend application, use the console where it's running:
 
+== Planzy Management Console ==
+
+```bash 
+1. Run full data pipeline (Scrape → Process → Generate Embeddings)
+2. Scrape data only
+3. Process scraped data
+4. Generate embeddings for events
+5. Test semantic search
+6. Check pending embeddings count
+7. Exit
+Enter your choice:
+```
+
+
